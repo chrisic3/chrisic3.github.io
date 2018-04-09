@@ -6,20 +6,108 @@
 		<meta name="description" content="Profile page for a fast learning web developer">
 
 		<title>Chris Stelly Portfolio</title>
+
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.1/dist/semantic.min.css">
+		<link rel="stylesheet" href="assets/css/main.css">
 	</head>
 	<body>
-		<h1>Chris Stelly</h1>
+		<nav class="ui inverted tabular fixed menu">
+			<div class="ui container">
+				<div class="header item">Chris Stelly</div>
+				<div class="item">About Me</div>
+				<div class="item">Portfolio</div>
+			</div>
+		</nav>
 
-		<h2>About Me</h2>
+		<section id="header" class="ui basic inverted center aligned segment">
+			<div class="ui container">
+				<h1>Chris Stelly</h1>
+			</div>
+		</section>
 
-		<h2>Portfolio</h2>
-		<ul>
-			<li><a href="/Color-Game/">Color Game</a></li>
-			<li><a href="/Purfect-Match-Demo/">Purfect Match</a></li>
-			<li><a href="/Photo-Grid/">Photo Grid</a></li>
-			<li><a href="/Sample-Blog/">Sample Blog</a></li>
-			<li><a href="/Patatap-Clone/">Patatap Clone</a></li>
-			<li><a href="Todo-App/">Todo App</a></li>
-		</ul>
+		<section id="about" class="ui basic center aligned segment">
+			<div class="ui container">
+				<h3 class="ui horizontal divider header">About Me</h3>
+			</div>
+		</section>
+
+		<section id="portfolio" class="ui basic center aligned segment">
+			<div class="ui container">
+				<h3 class="ui horizontal divider header">Portfolio</h3>
+
+				<div class="ui three column grid">
+					<div class="column">
+						<div class="ui fluid card">
+							<a href="/Photo-Grid/">
+								<img class="ui image" src="assets/images/Photo Blog.png">
+							</a>
+							<div class="content">
+								<a class="header" href="/Photo-Grid/">Photo Grid</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="column">
+						<div class="ui fluid card">
+							<a href="/Sample-Blog/">
+								<img class="ui image" src="assets/images/Sample Blog.png">
+							</a>
+							<div class="content">
+								<a class="header" href="/Sample-Blog/">Sample Blog</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="column">
+						<div class="ui fluid card">
+							<a href="/Purfect-Match-Demo/">
+								<img class="ui image" src="assets/images/Purfect Match.png">
+							</a>
+							<div class="content">
+								<a class="header" href="/Purfect-Match-Demo/">Purfect Match Demo</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="column">
+						<div class="ui fluid card">
+							<a href="/Color-Game/">
+								<img class="ui image" src="assets/images/Color Game.png">
+							</a>
+							<div class="content">
+								<a class="header" href="/Color-Game/">Color Game</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="column">
+						<div class="ui fluid card">
+							<a href="/Todo-App/">
+								<img class="ui image" src="assets/images/Todo App.png">
+							</a>
+							<div class="content">
+								<a class="header" href="Todo-App/">Todo App</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="column">
+						<div class="ui fluid card">
+							<a href="/Patatap-Clone/">
+								<img class="ui image" src="assets/images/Patatap Clone.png">
+							</a>
+							<div class="content">
+								<a class="header" href="/Patatap-Clone/">Patatap Clone</a>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</section>
+
+		<footer class="ui basic inverted segment">
+
+		</footer>
 	</body>
 </html>
