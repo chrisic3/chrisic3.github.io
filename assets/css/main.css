@@ -6,6 +6,10 @@
   height: 100%;
 }
 
+#footer {
+  margin-bottom: 0;
+}
+
 .icon {
   font-size: 2em !important;
 }
