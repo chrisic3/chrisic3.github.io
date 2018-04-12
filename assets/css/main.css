@@ -2,14 +2,32 @@
   margin: 0;
 }
 
+.header.item {
+  font-size: 1.2em;
+}
+
 #header {
   height: 100%;
 }
 
-#footer {
-  margin-bottom: 0;
+#about {
+  height: 100%;
+  padding-top: 5em;
 }
 
-.icon {
-  font-size: 2em !important;
+#portfolio {
+  height: 100%;
+  padding-top: 5em;
+}
+
+#footer {
+  margin-bottom: 0;
+  text-align: center;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  width: 20%;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.75), rgba(0, 0, 0, 0));
 }
