@@ -1,4 +1,4 @@
-$('[href^="#"').on('click', function(event) {
+$('[href^="#"]').on('click', function(event) {
   var target = $(this.getAttribute('href'));
 
   $('html, body').animate({
