@@ -1,18 +1,47 @@
+body.pushable {
+  background-color: inherit !important;
+}
+
+main {
+  display: inline;
+}
+
 .ui.menu {
   margin: 0;
+}
+
+.ui.header:first-child {
+  margin-top: calc(2rem - 0.142857em);
 }
 
 .header.item {
   font-size: 1.2em;
 }
 
+.right.item .toc.item{
+  display: none;
+}
+
+@media only screen and (max-width: 700px) {
+  .ui.menu .right.item .item {
+    display: none;
+  }
+
+  .right.item .toc.item{
+    display: block !important;
+  }
+}
+
 #header {
-  height: 950px;
+  background-color: #888888;
+  height: 100%;
   margin-top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #header .text h1 {
-  margin-top: 6em;
   font-size: 4em;
 }
 
@@ -26,7 +55,6 @@
 }
 
 #portfolio {
-  /* height: 100%; */
   padding-top: 5em;
 }
 
@@ -36,7 +64,9 @@
 }
 
 #footer p {
-  margin-top: 30px;
+  margin: 30px auto 0px auto;
+  width: 250px;
+  display: table;
 }
 
 hr {

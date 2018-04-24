@@ -8,194 +8,183 @@
 
   <title>Chris Stelly Portfolio</title>
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.1/dist/semantic.min.css">
-  <link rel="stylesheet" href="assets/css/main.css">
+  <link href="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.1/dist/semantic.min.css" rel="stylesheet">
+  <link href="assets/css/main.css" rel="stylesheet">
 
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 </head>
 <body>
+  <div class="ui right vertical inverted sidebar menu">
+    <a class="item" href="#about">About Me</a>
+    <a class="item" href="#portfolio">Portfolio</a>
+    <a class="item" href="#footer">Contact</a>
+  </div>
+
   <nav class="ui inverted tabular fixed menu">
     <div class="ui container">
       <a class="header item" href="#header">Chris Stelly</a>
-      <div class="right menu">
+      <div class="right item">
+        <a class="toc item">
+          <i class="sidebar icon"></i>
+        </a>
         <a class="item" href="#about">About Me</a>
         <a class="item" href="#portfolio">Portfolio</a>
         <a class="item" href="#footer">Contact</a>
       </div>
     </div>
   </nav>
-
-  <header id="header" class="ui basic inverted center aligned segment">
-    <div class="ui container">
-      <div class="ui text container">
-        <h1>Chris Stelly</h1>
-        <h2>Database Administrator and aspiring Web and Software Developer</h2>
+  
+  <main class="pusher">
+    <section id="header" class="ui basic inverted center aligned segment">
+      <div class="ui box container">
+        <div class="ui text container">
+          <h1>Chris Stelly</h1>
+          <h2>Database Administrator and aspiring Web and Software Developer</h2>
+        </div>
       </div>
-    </div>
-  </header>
-
-  <section id="about" class="ui basic center aligned segment">
-    <div class="ui container">
-      <h2 class="ui horizontal divider header">About Me</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam condimentum laoreet blandit. Curabitur elementum mattis bibendum. Praesent sollicitudin tincidunt faucibus. Integer efficitur, lorem nec luctus lacinia, turpis justo rutrum ex, et convallis ligula urna a arcu. Cras aliquet id magna eu porta. In venenatis pretium blandit. Pellentesque a sapien ac lorem blandit egestas.
-        <br>
-        Fusce molestie a leo vel ullamcorper. Vestibulum id eros lacinia, luctus odio eu, venenatis enim. Aenean in mauris in mi vestibulum ornare ut nec lorem. Donec molestie volutpat consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla luctus turpis nec eros sagittis, at porttitor augue aliquet. Mauris magna tortor, porttitor quis nibh et, aliquet iaculis metus. Pellentesque commodo nisl odio, ac tincidunt quam condimentum nec.
-      </p>
-    </div>
-  </section>
-
-  <section id="portfolio" class="ui basic center aligned segment">
-    <div class="ui container">
-      <h2 class="ui horizontal divider header">Portfolio</h3>
-
-      <div class="ui three column doubling grid">
-        <div class="column">
-          <div class="ui fluid card">
-            <a href="/Photo-Grid/">
-              <img class="ui image" src="assets/images/Photo Blog.png">
-            </a>
-            <div class="content">
-              <a class="header" href="/Photo-Grid/">Photo Grid</a>
-              <p class="content">
-                A simple photo blog template using HTML and CSS.
-              </p>
-            </div>
-          </div>
-        </div>
-                
-        <div class="column">
-          <div class="ui fluid card">
-            <a href="/Sample-Blog/">
-              <img class="ui image" src="assets/images/Sample Blog.png">
-            </a>
-            <div class="content">
-              <a class="header" href="/Sample-Blog/">Sample Blog</a>
-              <p class="content">
-                A simple blog template using HTML ans CSS.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="column">
-          <div class="ui fluid card">
-            <a href="/Purfect-Match-Demo/">
-              <img class="ui image" src="assets/images/Purfect Match.png">
-            </a>
-            <div class="content">
-              <a class="header" href="/Purfect-Match-Demo/">Purfect Match Demo</a>
-              <p class="content">
-                A sample, fictional landing page integrating Bootstrap and Font Awesome.
-                The page is responsive for mobile devices by utilizing Bootsptrap's 
-                collapsible navbar. All buttons and links go nowhere as this is 
-                is a sample in integrating Bootstrap.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="column">
-          <div class="ui fluid card">
-            <a href="/Color-Game/">
-              <img class="ui image" src="assets/images/Color Game.png">
-            </a>
-            <div class="content">
-              <a class="header" href="/Color-Game/">Color Game</a>
-              <p class="content">
-                A color matching app created after learning Javascript
-                and DOM manipulation. It presents the user with a random
-                RGB color and they must select the correct color below. 
-                It also has an easy mode that limits the choices to three.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="column">
-          <div class="ui fluid card">
-            <a href="/Todo-App/">
-              <img class="ui image" src="assets/images/Todo App.png">
-            </a>
-            <div class="content">
-              <a class="header" href="Todo-App/">Todo App</a>
-              <p class="extra content">
-                A simple Todo app built with HTML, CSS, and jQuery. It allows 
-                the user to add new items, mark them as completed by adding a 
-                strikethrough, and delete items. It does not use a database 
-                to store the items, only appends a new li inside the ul.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="column">
-          <div class="ui fluid card">
-            <a href="/Patatap-Clone/">
-              <img class="ui image" src="assets/images/Patatap Clone.png">
-            </a>
-            <div class="content">
-              <a class="header" href="/Patatap-Clone/">Patatap Clone</a>
-              <p class="content">
-                A simplified clone of the patatap.com app using paper.js for the 
-                circles and howl.js for the sounds. Keys A-Z are each mapped to 
-                their own sound.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="column">
-          <div class="ui fluid card">
-            <a href="https://cs-restfulblog.herokuapp.com/blogs">
-              <img class="ui image" src="assets/images/RESTful Blog.png">
-            </a>
-            <div class="content">
-              <a class="header" href="/https://cs-restfulblog.herokuapp.com/blogs/">RESTful Blog</a>
-              <p class="content">
-                A simple blog app that allows the creation of new posts, editing of 
-                existing posts, and	the deletion of posts. It was created while leaning 
-                the concepts of RESTful routing. Some of the technologies used in this 
-                app are Semantic UI, Node.js, Express.js, and MongoDB. The app is hosted on 
-                Heroku using MLab for the production database.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="column">
-          <div class="ui fluid card">
-            <a href="https://cs-yelpcamp-demo.herokuapp.com/">
-              <img class="ui image" src="assets/images/YelpCamp.png">
-            </a>
-            <div class="content">
-              <a class="header" href="https://cs-yelpcamp-demo.herokuapp.com/">YelpCamp</a>
-              <p class="content">
-                This is a Yelp type app in which users can post and view information 
-                about fictional campsites. It supports user registration, sign in and 
-                sign out, the creation, editing, and deleting of campsites, the creation, 
-                editing, and deletion of comments, and flash success and error messages. 
-                Users must sign in to create, edit, or delete campgrounds and comments, and
-                only the user to which the campground or comment belongs to can edit or delete them. 
-                Some of the technologies used in this app are Bootstrap, Node.js, Express.js, 
-                Passport.js and MongoDB. The app is hosted on Heroku using MLab for the production database.
-              </p>
-            </div>
-          </div>
-        </div>
-        
+    </section>
+  
+    <section id="about" class="ui basic center aligned segment">
+      <div class="ui container">
+        <h2 class="ui horizontal divider header">About Me</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam condimentum laoreet blandit. Curabitur elementum mattis bibendum. Praesent sollicitudin tincidunt faucibus. Integer efficitur, lorem nec luctus lacinia, turpis justo rutrum ex, et convallis ligula urna a arcu. Cras aliquet id magna eu porta. In venenatis pretium blandit. Pellentesque a sapien ac lorem blandit egestas.
+          <br>
+          Fusce molestie a leo vel ullamcorper. Vestibulum id eros lacinia, luctus odio eu, venenatis enim. Aenean in mauris in mi vestibulum ornare ut nec lorem. Donec molestie volutpat consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla luctus turpis nec eros sagittis, at porttitor augue aliquet. Mauris magna tortor, porttitor quis nibh et, aliquet iaculis metus. Pellentesque commodo nisl odio, ac tincidunt quam condimentum nec.
+        </p>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <footer id="footer" class="ui basic inverted segment">
-    <h2 class="header">Contact</h2>
-    <hr>
-    <a href="https://www.linkedin.com/in/christopherstelly"><i class="big linkedin icon"></i></a>
-    <a href="https://https://github.com/chrisic3"><i class="big github square icon"></i></a>
-    <p>This site built by me from scratch using <br> HTML5, CSS3, Semantic UI, and jQuery.</p>
-  </footer>
+    <section id="portfolio" class="ui basic center aligned segment">
+      <div class="ui container">
+        <h2 class="ui horizontal divider header">Portfolio</h3>
 
-  <!-- <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.1/dist/semantic.min.js"></script> -->
+        <div class="ui three column doubling grid">
+          <div class="column">
+            <div class="ui fluid card">
+              <a href="/Photo-Grid/">
+                <img class="ui image" src="assets/images/Photo Blog.png">
+              </a>
+              <div class="content">
+                <a class="header" href="/Photo-Grid/">Photo Grid</a>
+                <p class="content">
+                  A simple photo blog template using HTML and CSS.
+                </p>
+              </div>
+            </div>
+          </div>
+                  
+          <div class="column">
+            <div class="ui fluid card">
+              <a href="/Sample-Blog/">
+                <img class="ui image" src="assets/images/Sample Blog.png">
+              </a>
+              <div class="content">
+                <a class="header" href="/Sample-Blog/">Sample Blog</a>
+                <p class="content">
+                  A simple blog template using HTML ans CSS.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="ui fluid card">
+              <a href="/Purfect-Match-Demo/">
+                <img class="ui image" src="assets/images/Purfect Match.png">
+              </a>
+              <div class="content">
+                <a class="header" href="/Purfect-Match-Demo/">Purfect Match Demo</a>
+                <p class="content">
+                  A sample, fictional landing page integrating Bootstrap and Font Awesome. The page is responsive for mobile devices by utilizing Bootsptrap's collapsible navbar. All buttons and links go nowhere as this is is a sample in integrating Bootstrap.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="ui fluid card">
+              <a href="/Color-Game/">
+                <img class="ui image" src="assets/images/Color Game.png">
+              </a>
+              <div class="content">
+                <a class="header" href="/Color-Game/">Color Game</a>
+                <p class="content">
+                  A color matching app created after learning Javascript and DOM manipulation. It presents the user with a random RGB color and they must select the correct color below. It also has an easy mode that limits the choices to three.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="ui fluid card">
+              <a href="/Todo-App/">
+                <img class="ui image" src="assets/images/Todo App.png">
+              </a>
+              <div class="content">
+                <a class="header" href="Todo-App/">Todo App</a>
+                <p class="extra content">
+                  A simple Todo app built with HTML, CSS, and jQuery. It allows the user to add new items, mark them as completed by adding a strikethrough, and delete items. It does not use a database to store the items, only appends a new li inside the ul.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="ui fluid card">
+              <a href="/Patatap-Clone/">
+                <img class="ui image" src="assets/images/Patatap Clone.png">
+              </a>
+              <div class="content">
+                <a class="header" href="/Patatap-Clone/">Patatap Clone</a>
+                <p class="content">
+                  A simplified clone of the patatap.com app using paper.js for the circles and howl.js for the sounds. Keys A-Z are each mapped to their own sound.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="ui fluid card">
+              <a href="https://cs-restfulblog.herokuapp.com/blogs">
+                <img class="ui image" src="assets/images/RESTful Blog.png">
+              </a>
+              <div class="content">
+                <a class="header" href="/https://cs-restfulblog.herokuapp.com/blogs/">RESTful Blog</a>
+                <p class="content">
+                  A simple blog app that allows the creation of new posts, editing of existing posts, and	the deletion of posts. It was created while leaning the concepts of RESTful routing. Some of the technologies used in this app are Semantic UI, Node.js Express.js, and MongoDB. The app is hosted on Heroku using MLab for the production database.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="ui fluid card">
+              <a href="https://cs-yelpcamp-demo.herokuapp.com/">
+                <img class="ui image" src="assets/images/YelpCamp.png">
+              </a>
+              <div class="content">
+                <a class="header" href="https://cs-yelpcamp-demo.herokuapp.com/">YelpCamp</a>
+                <p class="content">
+                  This is a Yelp type app in which users can post and view information about fictional campsites. It supports user registration, sign in and sign out, the creation, editing, and deleting of campsites, the creation, editing, and deletion of comments, and flash success and error messages. Users must sign in to create, edit, or delete campgrounds and comments, and only the user to which the campground or comment belongs to can edit or delete them. Some of the technologies used in this app are Bootstrap, Node.js, Express.js, Passport.js and MongoDB. The app is hosted on Heroku using MLab for the production database.
+                </p>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <footer id="footer" class="ui basic inverted segment">
+      <h2 class="header">Contact</h2>
+      <hr>
+      <a href="https://www.linkedin.com/in/christopherstelly"><i class="big linkedin icon"></i></a>
+      <a href="https://https://github.com/chrisic3"><i class="big github square icon"></i></a>
+      <p>This site built by me from scratch using HTML5, CSS3, Semantic UI, and jQuery.</p>
+    </footer>
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.1/dist/semantic.min.js"></script>
   <script src="assets/js/main.js"></script>
 </body>
 </html>
