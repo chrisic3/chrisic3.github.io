@@ -9,3 +9,4 @@ $('[href^="#"]').on('click', function(event) {
 $('.right.item .dropdown').dropdown({
   action: 'hide'
 });
+

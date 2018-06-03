@@ -4,9 +4,9 @@ body {
   color: white;
 }
 
-h2 {
+/* h2 {
   font-family: "Roboto Slab" !important;
-}
+} */
 
 .ui.menu {
   /* background-color: #2c3531 !important; */
@@ -37,7 +37,10 @@ h2 {
 }
 
 #header {
-  background: linear-gradient(to bottom right, #557a95, #557a95, #b1a296);
+  /* background: linear-gradient(to bottom right, #557a95, #557a95, #b1a296); */
+  background: url(https://images.unsplash.com/photo-1517512006864-7edc3b933137?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=16d82ba907c8830a5ba939dfd751deaf&auto=format&fit=crop&w=1650&q=80);
+  background-size: cover;
+  background-position: center;
   height: 100%;
   margin-top: 0;
   display: flex;
@@ -50,7 +53,7 @@ h2 {
 }
 
 #header .text h2 {
-  font-family: "Roboto Slab";
+  /* font-family: "Roboto Slab"; */
   font-weight: normal;
 }
 
